@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narendar Karwasra</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="img/nk-logo.webp" alt="">
+            </a>
+            <ul id="nav-menu">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#web-projects">Web Projects</a></li>
+                <li><a href="index.html#graphic-design">Graphics</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="menu-btn" id="menu-btn">
+                Menu
+            </div>
+        </div>
+    </nav>
+
+    <!-- Web Projects Section -->
+    <section id="web-projects" style="padding-top: 120px;">
+        <h2>Web Development Projects</h2>
+        <p class="head-description">A collection of my recent web development and UI/UX projects, where I transform ideas into responsive, high-performance digital experiences. From business websites and lead generation platforms to custom management systems, I focus on clean design, modern technologies, and scalable solutions.</p>
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));">
+            <!-- Project 1 -->
+            <a href="https://cleand.in/" target="_blank" class="card glass">
+                <img src="img/project-1.webp" alt="Project 1">
+                <h3>Cleand - Laundry Website</h3>
+                <p>Laundry platform with responsive design, service management, and seamless customer experience.</p>
+            </a>
+            <!-- Project 2 -->
+            <a href="https://leadbanana.in/" target="_blank" class="card glass">
+                <img src="img/project-2.webp" alt="Project 2">
+                <h3>Lead Banana - Lead Generation</h3>
+                <p>SEO-focused landing page built to generate B2B leads with modern responsive design.</p>
+            </a>
+            <!-- Project 3 -->
+            <a href="https://eurokids-noida-sector122.com/" target="_blank" class="card glass">
+                <img src="img/project-3.webp" alt="Project 3">
+                <h3>EuroKids - Noida</h3>
+                <p>Preschool website with interactive sliders and engaging parent-friendly user experience.</p>
+            </a>
+            <!-- Project 4 -->
+            <a href="https://purnorganic.com/" target="_blank" class="card glass">
+                <img src="img/project-4.webp" alt="Project 4">
+                <h3>Purn Organic - E-commerce</h3>
+                <p>E-commerce platform for organic products with clean design, product showcase, and seamless shopping experience.</p>
+            </a>
+            <!-- Project 5 -->
+            <a href="https://venlib.com/" target="_blank" class="card glass">
+                <img src="img/project-7.webp" alt="Project 7">
+                <h3>Venlib</h3>
+                <p>Modern library management website with responsive layout, organized content, and user-friendly navigation.</p>
+            </a>
+
+            <!-- Project 6 -->
+            <a href="https://viniog.com/" target="_blank" class="card glass">
+                <img src="img/project-9.webp" alt="Project 9">
+                <h3>Viniog</h3>
+                <p>Business website with professional UI, responsive design, and optimized digital presence for growth.</p>
+            </a>
+
+            <!-- Project 7 -->
+            <a href="https://vvs-xi.vercel.app/" target="_blank" class="card glass">
+                <img src="img/project-5.webp" alt="Project 5">
+                <h3>Vijay Vikram Singh</h3>
+                <p>Personal portfolio website showcasing profile, services, and achievements with modern responsive design.</p>
+            </a>
+            <!-- Project 8 -->
+            <a href="https://visionary-pulse.vercel.app/" target="_blank" class="card glass">
+                <img src="img/project-6.webp" alt="Project 6">
+                <h3>Visionary Pulse</h3>
+                <p>Creative digital platform featuring modern layouts, smooth interactions, and engaging user experience.</p>
+            </a>
+            
+            <!-- Project 9 -->
+            <a href="https://ghar-ka-mali.vercel.app/" target="_blank" class="card glass">
+                <img src="img/project-8.webp" alt="Project 8">
+                <h3>Ghar Ka Mali</h3>
+                <p>Gardening service website with responsive design, service presentation, and customer-friendly interface.</p>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- Footer / Contact Section -->
+    <footer id="contact">
+        <div class="contact-content">
+            <h2>Let's Build Something Great</h2>
+            <p>Currently available for freelance projects and full-time opportunities.</p>
+            <a href="mailto:your.email@example.com" class="btn">Get In Touch</a>
+        </div>
+    </footer>
+
+
+    <!-- for navbar -->
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const navMenu = document.getElementById("nav-menu");
+        menuBtn.onclick = () => {
+            navMenu.classList.toggle("active");
+        };
+        // Close menu after clicking link
+        document.querySelectorAll("#nav-menu a").forEach(link => {
+            link.onclick = () => {
+                navMenu.classList.remove("active");
+            }
+        });
+    </script>
+
+</body>
+</html>
